@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class simpleController {
 
     @GetMapping("/")
-    public String helloWorld(){
+    public String simplePrint(){
         return "To-do Application !";
+    }
+
+    @GetMapping("/helloWorld")
+    public String helloWorld(){
+        return "Hello world !";
     }
 }
